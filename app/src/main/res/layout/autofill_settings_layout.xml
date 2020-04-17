@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/autofill_settings_layout"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background = "#EEEEEE"
+        >
+
+        <TextView
+            android:id = "@+id/more_username_textview"
+            android:text = "Hello User"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin = "@dimen/hello_user_margin"
+            android:textSize="@dimen/hello_user_textSize"
+            />
+
+        <ImageView
+            android:id = "@+id/more_userphoto_imageview"
+            android:background="@color/JunctionPurple"
+            android:layout_height="@dimen/profile_pic_height"
+            android:layout_width="@dimen/profile_pic_width"
+            android:layout_gravity="center|left"
+            android:layout_margin = "@dimen/profile_pic_margin"
+            />
+
+
+    </FrameLayout>
+    <ScrollView
+        android:id="@+id/autofill_settings_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/autofill_settings_contents_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/autofill_linear_layout_padding">
+
+                <TextView
+                    android:id="@+id/autofillText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:paddingStart="@dimen/padding"
+                    android:gravity="center_vertical"
+                    android:text="Autofill"
+                    android:textSize="@dimen/autofill_text_size_heading"/>
+
+                <Switch
+                    android:id="@+id/autofill_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/autofill_settings_name"
+                style="@style/autofill_linear_layout"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="exampleName"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/autofill_settings_roll_no"
+               style="@style/autofill_linear_layout"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roll_no"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="exampleRoll_no"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/autofill_settings_Email_id"
+                style="@style/autofill_linear_layout"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_id"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="example@id"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"                   />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/autofill_settings_year"
+                style="@style/autofill_linear_layout"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="exampleYear"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/autofill_text_padding"
+                    android:paddingEnd="@dimen/autofill_text_padding"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/autofill_settings_edit_button"
+                android:padding="@dimen/autofill_button_padding"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autofill_button_text"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
