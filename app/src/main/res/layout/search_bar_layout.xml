@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:id = "@+id/search_bar_text"
+            android:layout_width="0dp"
+            style="@style/SearchBar"
+            android:layout_weight = "1"
+            android:layout_gravity="start|center"
+            />
+
+        <Button
+            android:id = "@+id/search_bar_button"
+            android:layout_height="50dp"
+            android:layout_width = "wrap_content"
+            android:layout_gravity = "end|center"
+            android:text = "go"
+            android:layout_marginEnd="10dp"
+            />
+
+</merge>

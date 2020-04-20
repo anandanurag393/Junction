@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background = "#EEEEEE"
+        >
+
+        <TextView
+            android:id = "@+id/more_username_textview"
+            android:text = "Hello User"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin = "@dimen/hello_user_margin"
+            android:textSize="@dimen/hello_user_textSize"
+            />
+
+        <ImageView
+            android:id = "@+id/more_userphoto_imageview"
+            android:background="@color/JunctionPurple"
+            android:layout_height="@dimen/profile_pic_height"
+            android:layout_width="@dimen/profile_pic_width"
+            android:layout_gravity="center|left"
+            android:layout_margin = "@dimen/profile_pic_margin"
+            />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:orientation="vertical"
+        style="@style/Personal_details_linear_layout"
+        >
+
+        <TextView
+            android:id="@+id/user_name_text"
+            style="@style/Text.personal_details_heading"
+            android:text="name"/>
+        <EditText
+            android:id="@+id/user_name"
+            style="@style/Text.personal_detail_params"
+            android:text="name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/name"
+        android:id="@+id/rollNo"
+        style="@style/Personal_details_linear_layout">
+
+        <TextView
+            android:id="@+id/user_rollNo_text"
+            style="@style/Text.personal_details_heading"
+            android:text="RollNo" />
+        <EditText
+            android:id="@+id/user_rollNo"
+            style="@style/Text.personal_detail_params"
+            android:text="123456"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/rollNo"
+        android:id="@+id/email"
+        style="@style/Personal_details_linear_layout">
+        <TextView
+            android:id="@+id/user_email_text"
+            style="@style/Text.personal_details_heading"
+            android:text="Email"/>
+        <EditText
+            android:id="@+id/user_email"
+            style="@style/Text.personal_detail_params"
+            android:text="name@gmail.com"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/email"
+        android:id="@+id/Class"
+        style="@style/Personal_details_linear_layout">
+
+        <TextView
+            android:id="@+id/user_class_text"
+            style="@style/Text.personal_details_heading"
+            android:text="Class"/>
+        <EditText
+            android:id="@+id/user_class"
+            style="@style/Text.personal_detail_params"
+            android:text="TECH I C"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+

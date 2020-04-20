@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="description">16dp</dimen>
+    <dimen name="content">20dp</dimen>
+    <dimen name = "card_content_width">400dp</dimen>
+    <dimen name = "card_height">650dp</dimen>//height should be adjusted according to Linear layout size depending on screen resolution
+    <dimen name = "card_desc_width">350dp</dimen>//same as height
+    <dimen name = "card_top_margin">20dp</dimen>
+    <dimen name = "card_bottom_margin">20dp</dimen>
+    <dimen name="Bottom_toolbar_height">100dp</dimen>
+    <dimen name="card_ImageView_margin">10dp</dimen>
+    <dimen name="card_frameView_margin">5dp</dimen>//reason for adding: was looking better after this
+    <dimen name="card_TextView_height">552.5dp</dimen>//80% of the "card_height"
+    <dimen name="autofill_linear_layout_padding">10dp</dimen>
+    <dimen name="autofill_text_padding">10dp</dimen>
+    <dimen name="autofill_text_size_heading">30dp</dimen>
+    <dimen name="autofill_button_padding">10dp</dimen>
+    <dimen name="bottom_toolbar_margin">20dp</dimen>
+    <dimen name="hello_user_margin">10dp</dimen>
+    <dimen name="hello_user_textSize">16sp</dimen>
+    <dimen name="profile_pic_height">100dp</dimen>
+    <dimen name="profile_pic_width">100dp</dimen>
+    <dimen name="profile_pic_margin">10dp</dimen>
+</resources>
