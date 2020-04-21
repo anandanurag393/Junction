@@ -1,0 +1,52 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:id="@+id/signup_2_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/JunctionPurple">
+
+            <androidx.cardview.widget.CardView
+                style="@style/login_signup_cards">
+
+                <LinearLayout
+                    android:id="@+id/SignUp_2_Linear_layout"
+                    android:layout_margin="20dp"
+                    android:layout_height="match_parent"
+                    style="@style/Card_linear_layout">
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_weight="0"
+                        android:layout_margin="15dp"
+                        android:text="Interest"
+                        style="@style/Text.login_card_heading"
+                        ></TextView>
+                    <GridView
+                        android:id="@+id/Grid"
+                        android:numColumns="2"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        ></GridView>
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_weight="0"
+                        android:layout_gravity="bottom"
+                        android:text="Next"
+                        style="@style/login_card_buttons"
+                        ></Button>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

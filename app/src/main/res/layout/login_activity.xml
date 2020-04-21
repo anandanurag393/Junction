@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:id="@+id/Login_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/JunctionPurple">
+
+            <androidx.cardview.widget.CardView
+                style="@style/login_signup_cards">
+
+                <TextView
+                    android:id="@+id/heading"
+                    style="@style/Text.login_card_heading"
+                    android:text="@string/login"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/Login_activity_linear_layout"
+                    style="@style/Card_linear_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Email_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/Email"
+                            style="@style/login_hint"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/PasswordLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/JunctionPurple"
+
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Password"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            style="@style/login_hint"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:background="@color/JunctionLightGray"
+                        android:id="@+id/Login"
+                        style="@style/login_card_buttons"
+                        android:text="@string/login"
+                         />
+
+                    <Button
+                        android:layout_gravity="bottom|center"
+                        android:id="@+id/new_user"
+                        android:textAllCaps="false"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:stateListAnimator="@null"
+                        android:background="@color/White"
+                        android:text="New user"
+                        android:textColor="@color/grey"
+                        />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+</merge>

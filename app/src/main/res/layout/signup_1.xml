@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:id="@+id/signup_1_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/JunctionPurple">
+
+            <androidx.cardview.widget.CardView style="@style/login_signup_cards">
+
+                <LinearLayout
+                    android:id="@+id/SignUp_1_Linear_layout"
+                    android:layout_margin="20dp"
+                    style="@style/Card_linear_layout">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        style="@style/Text.login_card_heading"
+                        android:layout_width="match_parent"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:text="profile"
+                        />
+                    //image can be made circular using glide
+
+                    <ImageView
+                        android:id="@+id/Profile_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Name_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/name"
+                            style="@style/login_hint"
+                            android:hint="@string/name"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/College_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/College"
+                            style="@style/login_hint"
+                            android:hint="@string/college"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/Next"
+                        style="@style/login_card_buttons"
+                        android:layout_width="match_parent"
+                        android:text="Next"
+                        android:textAllCaps="false"></Button>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

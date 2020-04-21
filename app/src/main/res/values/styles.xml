@@ -50,6 +50,48 @@
     </style>
 
 
+    <style name="login_hint">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="login_card_buttons" parent="Widget.AppCompat.Button">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:background">@drawable/styled_button</item>
+    </style>
+
+
+    <style name="Text.login_card_heading" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center|top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@drawable/styled_button</item>
+    </style>
+
+
+    <style name="Card_linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
     <style name="moreScreen_Buttons" parent="Widget.AppCompat.Button">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
@@ -92,10 +134,22 @@
 
 
     <style name="SearchBar">
-        <item name="android:background">@drawable/active_button_purple</item>
+        <item name="android:background"></item>
         <item name="android:layout_height">40dp</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:paddingLeft">20dp</item>
+    </style>
+
+
+    <style name="login_signup_cards" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">80dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="elevation">15dp</item>
     </style>
 
 </resources>
