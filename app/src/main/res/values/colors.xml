@@ -6,4 +6,5 @@
     <color name="JunctionPurple">#990099</color>
     <color name = "JunctionLightGray">#EEEEEE</color>
     <color name = "White">#FFFFFF</color>
+    <color name="grey">#686868</color>//for buttons
 </resources>

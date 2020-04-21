@@ -9,4 +9,8 @@
     <string name="email_id">Email_id</string>
     <string name="year">Year</string>
     <string name="autofill_button_text">Edit</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="college">College</string>
 </resources>
