@@ -1,0 +1,51 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:id="@+id/signup_3_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/JunctionPurple">
+
+            <androidx.cardview.widget.CardView
+                style="@style/login_signup_cards">
+                <LinearLayout
+                    android:id="@+id/SignUp_3_Linear_layout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Institute_mail_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/Institute_mail"
+                            style="@style/login_hint"
+                            android:hint="Institute mail"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/finish"
+                        style="@style/login_card_buttons"
+                        android:text="Finish"
+                        android:background="@drawable/styled_button"
+                        android:textAllCaps="false"
+                        ></Button>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

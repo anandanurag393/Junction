@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Junction</string>
+    <string name="button1">ForYou</string>
+    <string name="button2">Workshops</string>
+    <string name="button3">Competition</string>
+    <string name="button4">Interviews</string>
+    <string name="name">Name</string>
+    <string name="roll_no">Roll_no</string>
+    <string name="email_id">Email_id</string>
+    <string name="year">Year</string>
+    <string name="autofill_button_text">Edit</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="college">College</string>
 </resources>

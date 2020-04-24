@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.omada.junction.BottomToolbarButton
+        android:id = "@+id/explore_button"
+        style="@style/bottom_toolbar_button"
+        android:layout_gravity="center|start"
+        android:text = "E"
+        android:layout_marginStart="@dimen/bottom_toolbar_margin"
+        />
+
+    <com.omada.junction.BottomToolbarButton
+        android:id = "@+id/junction_button"
+        style="@style/bottom_toolbar_button"
+        android:layout_gravity="center"
+        android:text = "J"
+        />
+
+    <com.omada.junction.BottomToolbarButton
+        android:id = "@+id/more_button"
+        style="@style/bottom_toolbar_button"
+        android:layout_gravity="center|end"
+        android:text = "M"
+        android:layout_marginEnd="@dimen/bottom_toolbar_margin"
+
+        />
+
+</merge>
